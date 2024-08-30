@@ -1,0 +1,37 @@
+.body{ 
+    background-color: #bacdb0;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "heading heading"
+    "navbar navbar"
+    "image_1 text_1"
+    "image_2 text_2"
+    "text_3 text_3"
+    "footer";
+
+}
+
+.Heading {
+    grid-area: Heading;
+}
+
+.Navbar {
+    grid-area: Navbar;
+}
+
+.image_1 {
+    grid-area: image_1;
+}
+
+.text_1 {
+    grid-area: text_1;
+    font-size: large;
+    
+}
+
