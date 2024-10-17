@@ -45,27 +45,35 @@
 
 .image_1 {
     grid-area: image_1;
+    text-align: center;
 }
  
 .text_1 {
     grid-area: text_1;
     font-size: large;
+    text-align: center;
 }
  
 .image_2 {
     grid-area: image_2;
+    text-align: center;
 }
  
  .text_2 {
     grid-area: text_2;
+    font-size: large;
+    text-align: center;
  }
 
 .text_3 {
     grid-area: text_3;
+    font-size: large;
+    text-align: center;
 }
  
 .footer {
     grid-area: footer;
+    font-size: small;
     text-align: center;
 }
  
