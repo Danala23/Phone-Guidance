@@ -67,6 +67,7 @@
 
 .text_3 {
     grid-area: text_3;
+    font-size: large;
     text-align: center;
 }
  
