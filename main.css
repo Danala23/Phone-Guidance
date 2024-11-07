@@ -6,21 +6,28 @@ body{
 .container{
     display: grid;
     height:100vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "heading heading"
-    "navbar navbar"
-    "image_1 text_1"
-    "image_2 text_2"
-    "text_3 text_3"
-    "footer footer";
+    "heading"
+    "heading"
+    "navbar"
+    "navbar"
+    "image_1"
+    "text_1"
+    "image_2"
+    "text_2"
+    "text_3"
+    "text_3"
+    "footer" 
+    "footer";
 
 }
  
 .heading {
     grid-area: heading;
     text-align: center;
+    background-color: #475B63;
 }
  
 .navbar {
