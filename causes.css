@@ -15,7 +15,6 @@ body{
     "navbar"
     "image_1"
     "text_1"
-    "image_2"
     "text_2"
     "text_3"
     "text_3"
@@ -62,12 +61,7 @@ body{
     line-height: 30px;
     padding-right: 40px;
 }
- 
-.image_2 {
-    grid-area: image_2;
-    text-align: center;
-}
- 
+
  .text_2 {
     grid-area: text_2;
     font-size: large;
