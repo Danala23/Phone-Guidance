@@ -15,12 +15,12 @@ body{
     "navbar"
     "image_1"
     "text_1"
+    "image_2"
     "text_2"
     "text_3"
     "text_3"
-    "footer" 
-    "footer";
-
+    "footer"  ;
+    
 }
  
 .heading {
@@ -30,23 +30,20 @@ body{
 }
  
 .navbar {
-    grid-area: navbar;
     text-align: center;
+    grid-area: navbar;
+    padding: 20px
+
 }
 
 .navbar ul {
-    list-style: none;
-    padding: 0;
-}
- 
-.navbar ul li {
-    display: inline;
-    margin: 0 10px
+    list-style-type: none;
 }
 
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
+.navbar li {
+    display: inline;
+    background-color: #ffff;
+    padding: 30px
 }
 
 .image_1 {
@@ -62,26 +59,20 @@ body{
     padding-right: 40px;
 }
 
- .text_2 {
+.text_2 {
     grid-area: text_2;
     font-size: large;
     text-align: justify;
     line-height: 30px;
     padding-right: 40px;
- }
-
-.text_3 {
-    grid-area: text_3;
-    font-size: large;
-    text-align: center;
 }
- 
+
 .footer {
     grid-area: footer;
     font-size: large;
-    text-align: center;
+    text-align: justify;
 }
  
 img {
-    width:40%;
+    width:50%;
 }
