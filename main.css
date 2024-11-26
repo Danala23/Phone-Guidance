@@ -1,90 +1,166 @@
-body{
-    background-color: #bacdb0;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- 
- 
-.container{
-    display: grid;
-    height:100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "heading"
-    "heading"
-    "navbar"
-    "navbar"
-    "image_1"
-    "text_1"
-    "image_2"
-    "text_2"
-    "text_3"
-    "text_3"
-    "footer" ;
 
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    color: #333;
 }
- 
-.heading {
-    grid-area: heading;
+
+/* Container class for centralizing content */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 15px 0;
     text-align: center;
-    background-color: #475B63;
+    
 }
- 
+
+h1 {
+    font-size: 5; /* Fixed the font size unit */
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Navbar Styles */
 .navbar {
-    text-align: center;
-    grid-area: navbar;
-    padding: 20px
-
+    background-color: #ecf0f1;
+    padding: 15px 0;
 }
 
 .navbar ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
 }
 
 .navbar li {
-    display: inline;
-    background-color: #ffff;
-    padding: 30px
+    margin: 0 25px;
+    padding-left: 20px;
 }
 
-.image_1 {
-    grid-area: image_1;
-    text-align: center;
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
 }
- 
-.text_1 {
-    grid-area: text_1;
-    font-size: large;
-    text-align: justify;
-    line-height: 30px;
-    padding-right: 40px;
-}
- 
-.image_2 {
-    grid-area: image_2;
-    text-align: center;
-}
- 
- .text_2 {
-    grid-area: text_2;
-    font-size: large;
-    text-align: justify;
-    line-height: 30px;
-    padding-right: 40px;
- }
 
-.text_3 {
-    grid-area: text_3;
-    font-size: large;
-    text-align: center;
+.navbar a:hover {
+    color: #3498db;
 }
- 
-.footer {
-    grid-area: footer;
-    font-size: large;
-    text-align: center;
+
+/* Content Sections */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
 }
- 
-img {
-    width:40%;
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-wrapper img {
+    width: 95%;
+    height: auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    width: 45%;
+    padding: 2px;
+    font-size: 2; /* Fixed invalid font size value */
+    color: #080808;
+}
+
+.text-content h2 {
+    font-size: 2; /* Fixed invalid font size value */
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.text-content p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+#footer {
+    background-color: #34495e; /* Match the dark theme if used elsewhere */
+    color: #fff; /* Light text for contrast */
+    padding: 20px 0;
+}
+
+#footer h5 {
+    font-family: 'Lora', serif;
+    color: #f8f9fa; /* Slightly lighter for headings */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#footer ul.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul.quick-links li {
+    margin-bottom: 10px;
+}
+
+#footer ul.quick-links li a {
+    color: #adb5bd; /* Muted link color */
+    text-decoration: none;
+}
+
+#footer ul.quick-links li a:hover {
+    color: #17a2b8; /* Highlight link color */
+    text-decoration: underline;
+}
+
+#footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+#footer .text-green {
+    color: #28a745;
+}
+
+#footer .text-green:hover {
+    color: #218838;
+    text-decoration: underline;
+}
+
+#footer .social a {
+    color: #adb5bd;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+#footer .social a:hover {
+    color: #17a2b8;
 }
 
