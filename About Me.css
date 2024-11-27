@@ -7,11 +7,11 @@
   }
   
   body {
-    background-color: #ffffff;
-    color: #333;
-    font-size: 16px;
+    background-color: #BACDB0;
+    font-family: 'Lora', serif;
     line-height: 1.6;
-  }
+    color: #333;
+}
   
   /* Container for consistent padding and width */
   .container {
@@ -21,12 +21,13 @@
   }
   
   /* Header Styles */
-  header {
-    background-color: #34495e;
-    color: #ffffff;
-    padding: 15px 0;
-    text-align: center;
-  }
+header {
+  background-color: #475b63;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+  
+}
   
   h1 {
     font-size: 3;
@@ -76,7 +77,7 @@
   }
   
   #footer {
-    background-color: #34495e; /* Match the dark theme if used elsewhere */
+    background-color: #475b63; /* Match the dark theme if used elsewhere */
     color: #fff; /* Light text for contrast */
     padding: 20px 0;
 }
@@ -131,5 +132,3 @@
 #footer .social a:hover {
     color: #17a2b8;
 }
-
-  
